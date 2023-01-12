@@ -1,0 +1,471 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+
+@font-face {
+  font-family: Liberator;
+  src: url("./fonts/Liberator-Siroko/LiberatorSIROKO-Heavy.ttf"),
+    url("./fonts/Liberator-Siroko/LiberatorSIROKO-Light.ttf"),
+    url("./fonts/Liberator-Siroko/LiberatorSIROKO-Medium.ttf"),
+    url("./fonts/Liberator-Siroko/LiberatorSIROKO-Outline.ttf"),
+    url("./fonts/Liberator-Siroko/LiberatorSIROKO-Thin.ttf");
+}
+
+$bg-color1: #5dc2bd;
+$bg-color2: #311429;
+$bg-color3: rgba(255, 255, 255, 0.09);
+$bg-color4: #c92f58;
+$bg-color5: #000;
+$bg-color6: #339b95;
+$bg-color7: #2c0c23;
+$bg-color8: #c51414;
+$color1: #2c5e5b;
+$color2: #efe5c3;
+$color3: #fff;
+$color4: #bbbbbb;
+$color5: #000;
+$gradient1: linear-gradient(
+  90deg,
+  rgba(189, 189, 189, 1) 0%,
+  rgba(255, 255, 255, 1) 100%
+);
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100vh;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url('../public/background.jpg');
+    background-size: cover;
+}
+
+.logo {
+    margin-left: 17%;
+    margin-top: 30px;
+    padding: 30px 0 15px;
+    width: 145px;
+    height: 35px;
+    background: transparent url("../public/logo-siroko.png") no-repeat;
+}
+
+
+    footer {
+        background: $bg-color5;
+        padding: 15px 15%;
+        font-family: "Inconsolata";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        color: #bbb;
+        width: 100%;
+        margin-top: 30px;
+    }
+  
+  
+  
+
+
+.section-one {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 17%;
+    margin-right: 17%;
+}
+
+#form {
+    margin-left: 17%;
+    margin-right: 17%;
+    background-color: rgb(49 21 41);
+}
+
+.in-form-div {
+    padding: 15px;
+    background: #311429;
+    border-radius: 3px;
+    overflow: hidden;
+    height: calc(100% - 140px);
+    margin-bottom: 30px;
+    margin-top: 10px;
+
+}
+.whiter {
+    color: $color2;
+    font-size: 20px;
+  }
+  
+  .whitepol{
+    font-family: Inconsolata;
+    color: $color3;
+    font-size: 20px;
+    padding: 15px 1%;
+  }
+
+.white {
+  
+    color: $color3;
+    font-family: "Liberator", sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 1.7rem;
+color: #fff;
+margin: 9px 0 0;
+    
+}
+.whiterin{
+   
+    color: #ffff;
+    font-size: 20px;
+    padding: 15px 9px;
+}
+
+.section-one :nth-child(1) {
+    color: gray;
+}
+
+p a {
+    text-decoration: underline;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    background: #000;
+    padding: 25px 17%;
+    font-family: "Inconsolata";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #bbb;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    gap: 10px;
+    height: 7%;
+}
+
+.form-check {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 8px 3px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, .09);
+    color: #fff;
+    transition-duration: .5s;
+    height: 2rem;
+    font-size: 22px;
+   
+    height: 60px;
+    
+
+}
+
+.form-check2 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 8px 3px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, .09);
+    color: #fff;
+    transition-duration: .5s;
+    height: 2rem;
+    font-size: 22px;
+   
+    height: 90px;
+    
+
+}
+
+
+    
+.form-check :first-child {
+    margin: 6px;
+   
+}
+
+.section-one :first-child {
+    background: $bg-color1;
+    color: $color1;
+    padding: 3px 7px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-family: Inter, sans-serif;
+    font-size: 15px;
+    line-height: 15px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    cursor: pointer;
+    width: 100%;
+    background-color: $bg-color6;
+    height: 30px;
+    border-radius: 4px;
+    margin-left: 3px;
+}
+
+small {
+    font-size: x-small;
+}
+
+.option-container :hover {
+    cursor: pointer;
+    background-color: rgba(128,128,128,.09);
+    transition-duration: .5s;
+}
+
+.option-container-selected {
+    background: $bg-color4;
+    transition-duration: .5s;
+}
+
+#discount-code {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(270deg, #FFFFFF 0%, #BDBDBD 100%);
+    border-radius: 2px;
+    height: 5rem;
+    margin-bottom: 20px;
+}
+
+#firstBtn {
+    height: 3rem;
+}
+
+.space {
+    margin-bottom: 20px;
+}
+
+
+/* pretty radio */
+  label > input[type="radio"] {
+    display: none;
+  
+   
+    
+  }
+  label > input[type="radio"] + *::before {
+    content: "";
+    display: inline-block;
+    vertical-align: bottom;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.9rem;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: gray;
+    
+  }
+  label > input[type="radio"]:checked + * {
+    color: #fff;
+    
+
+   
+   
+  }
+  
+    
+
+  label > input[type="radio"]:checked + *::before {
+    
+   
+    background: radial-gradient(
+      rgb(203, 212, 212) 0%,
+      rgb(79, 82, 82) 40%,
+      transparent 50%,
+      transparent
+    );
+    border-color: rgb(231, 239, 239);
+  }
+  
+
+
+
+
+
+  /* portapapeles */
+
+  .portapapeles {
+    transform: translateY(-612%);
+    margin-left: 72%;
+    font-family: Inconsolata;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    border: 4px solid #000;
+    padding: 3px 6px;
+    border-radius: 3px;
+    cursor: pointer;
+    background: #fff;
+    height: 60px;
+    width: 120px;
+    
+    
+  }
+  
+
+  
+  .timeout{
+ 
+    margin-right: 0.9rem;
+  }
+
+  .countdown {
+  
+    background-color: #2C0C23;
+}
+
+.countdown-finished {
+    background-color: $bg-color4;
+    display: flex;
+    justify-content: space-around;
+}
+
+.countdown a {
+    display: none;
+}
+
+// medias queries
+
+  @media only screen and (max-width: 600px) {
+    .logo {
+        margin-left: 17%;
+        margin-top: 30px;
+        width: 145px;
+        height: 35px;
+        background: transparent url("../public/logo-siroko2.png") no-repeat;
+    }
+
+    .portapapeles {
+        appearance: auto;
+        writing-mode: horizontal-tb !important;
+        text-rendering: auto;
+        color: buttontext;
+        letter-spacing: normal;
+        word-spacing: normal;
+        line-height: normal;
+        text-transform: none;
+        text-indent: 0px;
+        text-shadow: none;
+        display: inline-block;
+        text-align: center;
+        align-items: flex-start;
+        cursor: default;
+        box-sizing: border-box;
+        background-color: buttonface;
+        margin: 0em;
+        padding: 1px 6px;
+        border-width: 2px;
+        border-style: outset;
+        border-color: buttonborder;
+        border-image: initial;
+        
+        
+      }
+        
+      }
+
+
+  @media (max-width: 834px) {
+    .container {
+      padding: 0 5% !important;
+      height: 100vh !important;
+    }
+    footer {
+      padding-left: 5%;
+    }
+    .portapapeles {
+        transform: translateY(-712%);
+        margin-left: 62%;
+        font-family: Inconsolata;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        border: 4px solid #000;
+        padding: 3px 6px;
+        border-radius: 3px;
+        cursor: pointer;
+        background: #fff;
+        height: 60px;
+        width: 120px;
+        
+        
+      }
+  }
+  @media (max-width: 375px) {
+    .container {
+      background-size: auto 100%;
+    }
+    .logo {
+      background: transparent url("/public/logo-siroko2.png") no-repeat;
+    }
+    .portapapeles {
+        transform: translateY(-1552%);
+        margin-left: 62%;
+        font-family: Inconsolata;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        border: 2px solid #000;
+        padding: 3px 6px;
+        border-radius: 3px;
+        cursor: pointer;
+        background: #fff;
+        height: 30px;
+        width: 60px;
+        
+      }
+      .timeout{
+        transform: translateY(25%);
+        margin-left: 5%;
+      }
+      #countdown{
+        margin-left: 42%;
+       font-size: 35px;
+        transform: translateY(-450%);
+        color: #fff;
+       
+      }
+      @media (max-width: 393px) {
+        .portapapeles {
+            transform: translateY(-1352%);
+            margin-left: 62%;
+            font-family: Inconsolata;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            border: 2px solid #000;
+            padding: 3px 6px;
+            border-radius: 3px;
+            cursor: pointer;
+            background: #fff;
+            height: 30px;
+            width: 60px;
+            
+          }
+      }
+
+        
+  }/*# sourceMappingURL=styles.css.map */
